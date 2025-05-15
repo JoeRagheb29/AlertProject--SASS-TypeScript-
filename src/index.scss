@@ -1,0 +1,56 @@
+// ------Dafualt--------------
+$defaultBg:#1d1f20b5;
+$defaultColor:#c8c8c8;
+$defaultBorder:#c8c8c8;
+// ----------Info-------------
+$infoColor:#bcc0ff;
+$infoBorder:#646cff;
+$infoBg: #646cff14;
+// --------Warning------------
+$warningBg: #ffc5170d;
+$warningColor: #fcd253;
+$warningBorder: #ffd500ca;
+// ----------Error------------
+$errorBg: #c01d1d26;
+$errorColor: #ef8d8dfa;
+$errorBorder: #ff190052;
+// ---------Success-----------
+$successBg:#f6ee0920;
+$successColor: #7acf58d6;
+$successBorder: #00ff0052;
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #000;
+}
+
+@mixin Alert($className, $border, $Bg, $titleColor) {
+    .#{$className} {
+        border:2px dashed $border;
+        border-radius: 10px;
+        background-color: $Bg;
+        h2 {
+            font-size: 30;
+            color: $titleColor;
+        }
+        p {
+            font-size: 15px;
+            color: $titleColor;
+            margin-top: 10px;
+        }
+        svg {
+            color: $titleColor;
+            cursor: pointer;
+        }
+    }
+}
+
+@include Alert("alert-default", $defaultBorder, $defaultBg, $defaultColor);
+@include Alert("alert-info", $infoBorder, $infoBg, $infoColor);
+@include Alert("alert-success", $successBorder, $successBg, $successColor);
+@include Alert("alert-warning", $warningBorder, $warningBg, $warningColor);
+@include Alert("alert-danger", $errorBorder, $errorBg, $errorColor);

@@ -1,0 +1,71 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.alert-default {
+  border: 2px dashed #c8c8c8;
+  border-radius: 10px;
+  background-color: rgba(29, 31, 32, 0.7098039216);
+}
+.alert-default h2 {
+  font-size: 30;
+  color: #c8c8c8;
+}
+.alert-default .x {
+  cursor: pointer;
+}
+
+.alert-info {
+  border: 2px dashed #646cff;
+  border-radius: 10px;
+  background-color: rgba(100, 108, 255, 0.0784313725);
+}
+.alert-info h2 {
+  font-size: 30;
+  color: #bcc0ff;
+}
+.alert-info .x {
+  cursor: pointer;
+}
+
+.alert-success {
+  border: 2px dashed rgba(0, 255, 0, 0.3215686275);
+  border-radius: 10px;
+  background-color: rgba(246, 238, 9, 0.1254901961);
+}
+.alert-success h2 {
+  font-size: 30;
+  color: rgba(122, 207, 88, 0.8392156863);
+}
+.alert-success .x {
+  cursor: pointer;
+}
+
+.alert-warning {
+  border: 2px dashed rgba(255, 213, 0, 0.7921568627);
+  border-radius: 10px;
+  background-color: rgba(255, 197, 23, 0.0509803922);
+}
+.alert-warning h2 {
+  font-size: 30;
+  color: #fcd253;
+}
+.alert-warning .x {
+  cursor: pointer;
+}
+
+.alert-danger {
+  border: 2px dashed rgba(255, 25, 0, 0.3215686275);
+  border-radius: 10px;
+  background-color: rgba(192, 29, 29, 0.1490196078);
+}
+.alert-danger h2 {
+  font-size: 30;
+  color: rgba(239, 141, 141, 0.9803921569);
+}
+.alert-danger .x {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=index.css.map */
